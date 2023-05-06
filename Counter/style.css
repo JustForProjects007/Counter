@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-color: #8FC1B5;
+}
+
+.counter {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100%;
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    float: top;
+}
+
+.number .main {
+    display: flex;
+    gap: 1rem;
+}
+
+span {
+    cursor: pointer;
+}
+
+.minus,
+.plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: center;
+    transition: all .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.reset {
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: center;
+    transition: all .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.minus {
+    background-color: #D95252;
+    color: #fff;
+}
+
+.plus {
+    background-color: #038C7F;
+    color: #fff;
+}
+
+.minus:hover,
+.plus:hover,
+.reset:hover {
+    border-radius: 50%;
+}
+
+
+input {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+    background-color: #f27474 !important;
+}
+
+.colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+}
+
+.colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+}
+
+.colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+}
+
+.colored-toast .swal2-title {
+    color: white;
+}
+
+.colored-toast .swal2-close {
+    color: white;
+}
+
+.colored-toast .swal2-html-container {
+    color: white;
+}
